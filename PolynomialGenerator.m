@@ -8,8 +8,8 @@ clc
 n = input('How many points do you want? ');
 
 % Create points.
-Px = randi([-10,10],[n,1]);
-Py = randi([-10,10],[n,1]);
+Px = 20*rand(n,1);
+Py = 1000*rand(n,1);
 
 % Size of your matrix.
 sz = length(Px);
@@ -33,7 +33,7 @@ for i = 1:sz
     poly = S(i)*x^(sz-i)+poly;
 end
 
-t = -20:.1:20;
+t = 0:.1:12;
 
 y = subs(poly,x,t);
 
