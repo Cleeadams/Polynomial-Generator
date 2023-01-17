@@ -8,7 +8,7 @@ clc
 n = input('How many points do you want? ');
 
 % Create points.
-Px = 20*rand(n,1);
+Px = 10*rand(n,1);
 Py = 1000*rand(n,1);
 
 % Size of your matrix.
